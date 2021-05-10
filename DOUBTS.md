@@ -1,0 +1,3 @@
+1. css, js not loading - in console log it is trying to fetch them from static/... instead of marvelmirror/static/...
+
+Sol. add homepage field in package.json
