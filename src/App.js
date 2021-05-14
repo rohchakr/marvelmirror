@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { fetchData } from './modules/fetchData';
 
 function App() {
+
+  console.log(fetchData());
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +22,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+        { fetchData().msg }
+      </main>
     </div>
   );
 }
