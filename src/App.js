@@ -23,7 +23,7 @@ function App() {
         </a>
       </header>
       <main>
-        { fetchData().msg }
+        { 'Hello' }
       </main>
     </div>
   );
