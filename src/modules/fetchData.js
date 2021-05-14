@@ -1,12 +1,12 @@
-const RC_MARVEL_PUBLIC_KEY = '9f829b5e3be89dfe129ba4aa8fce641f';
-const EP_MARVEL_BASE = 'https://gateway.marvel.com/';
-const EP_ALL_CHARACTERS = '/v1/public/characters';
+const RC_MARVEL_PUBLIC_KEY = '';
+const EP_MARVEL_BASE = '';
+const EP_ALL_CHARACTERS = '';
 
 const fetchAllCharacters = () => {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
         if (this.readyState === 4) {
-            return xhr.responseText;
+            return xhr.response;
         }
     }
     const method = 'GET';
@@ -17,7 +17,8 @@ const fetchAllCharacters = () => {
 }
 
 const fetchData = () => {
-    return fetchAllCharacters();
+    // return fetchAllCharacters();
+    return { msg: 'hello there'};
 }
 
 export { fetchData };
